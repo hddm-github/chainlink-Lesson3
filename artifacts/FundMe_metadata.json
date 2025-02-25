@@ -1,10 +1,21 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.20+commit.a1b79de6"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_lockTime",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
 			{
 				"inputs": [],
 				"name": "fund",
@@ -43,6 +54,46 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getFund",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "refund",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -53,8 +104,20 @@
 		"userdoc": {
 			"kind": "user",
 			"methods": {
+				"fund()": {
+					"notice": "筹款"
+				},
 				"getChainlinkDataFeedLatestAnswer()": {
-					"notice": "Returns the latest answer."
+					"notice": "获取最新的汇率"
+				},
+				"getFund()": {
+					"notice": "获取当前筹款金额"
+				},
+				"refund()": {
+					"notice": "提取筹款"
+				},
+				"transferOwnership(address)": {
+					"notice": "更改合约所有权"
 				}
 			},
 			"version": 1
@@ -64,7 +127,7 @@
 		"compilationTarget": {
 			"FundMe.sol": "FundMe"
 		},
-		"evmVersion": "cancun",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -85,11 +148,11 @@
 			]
 		},
 		"FundMe.sol": {
-			"keccak256": "0x2ae65ad32f222c5f905a236d0c84fc93102fb255bede6cb01ebed30b7d0b4cc6",
+			"keccak256": "0x44c0b6e799db965ff7d5dd3fb47510a97eb1988bc42914d62ac1dcb8eacc4dad",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3b061ef5617e7a107db57f5684970e0557d2c244184e288ca8a17bbf037c2f31",
-				"dweb:/ipfs/QmQBs6G93dhWiJn2yv73JNZF17BTiZ2DeodPZRN5cK7VE3"
+				"bzz-raw://22684f0d3afc5e7e2db414e05950178695afd2081cc142b4a02be2abb080b720",
+				"dweb:/ipfs/QmdQprMo6h8cvSaTCGFwsDD9M7cWXnEUw3pUXoDh9L8cK9"
 			]
 		}
 	},
