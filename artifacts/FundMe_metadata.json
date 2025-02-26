@@ -86,6 +86,37 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "_erc20Addr",
+						"type": "address"
+					}
+				],
+				"name": "setErc20Addr",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "funder",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountToUpdate",
+						"type": "uint256"
+					}
+				],
+				"name": "setFunderToAmount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "newOwner",
 						"type": "address"
 					}
@@ -148,11 +179,11 @@
 			]
 		},
 		"FundMe.sol": {
-			"keccak256": "0x44c0b6e799db965ff7d5dd3fb47510a97eb1988bc42914d62ac1dcb8eacc4dad",
+			"keccak256": "0xcdecdf2d17a0ad934a1f501e7245c49c376dbbb5b422509754a3aaa9a3a37b86",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://22684f0d3afc5e7e2db414e05950178695afd2081cc142b4a02be2abb080b720",
-				"dweb:/ipfs/QmdQprMo6h8cvSaTCGFwsDD9M7cWXnEUw3pUXoDh9L8cK9"
+				"bzz-raw://1a0d36da3659a99df9f1ccf4e7826a0d3402b58588cf9804d8c5caa69aa19b86",
+				"dweb:/ipfs/QmTiDWiTWfN2wbMfXttBbYG6NncqMbNa6JjyvV516QgZxd"
 			]
 		}
 	},

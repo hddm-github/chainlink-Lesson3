@@ -21,6 +21,8 @@ contract FundMe {
     uint256 deploymentTimestamp;
     uint256 lockTime;
 
+    address erc20Addr;
+
     constructor(uint256 _lockTime) {
         // sepolia test
         dataFeed = AggregatorV3Interface(
@@ -114,6 +116,15 @@ contract FundMe {
         }("");
         require(success, "transfer tx failed");
         funderToAmount[msg.sender] = 0;
+    }
+
+    function setFunderToAmount(address funder,uint256 amountToUpdate) external  onlyOwner{
+        require(msg.sender == erc20Addr,"you do not have permission to call this function");
+        funderToAmount[funder] = amountToUpdate;
+
+    }
+    function setErc20Addr(address _erc20Addr)public onlyOwner{
+        erc20Addr = _erc20Addr;
     }
 
     /**
