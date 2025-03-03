@@ -517,19 +517,19 @@
 			]
 		},
 		"FundMe.sol": {
-			"keccak256": "0xcdecdf2d17a0ad934a1f501e7245c49c376dbbb5b422509754a3aaa9a3a37b86",
+			"keccak256": "0x3d55954e6dfbbac5071f872314b557307dc1dd4627335b5180b5a755e543c74c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1a0d36da3659a99df9f1ccf4e7826a0d3402b58588cf9804d8c5caa69aa19b86",
-				"dweb:/ipfs/QmTiDWiTWfN2wbMfXttBbYG6NncqMbNa6JjyvV516QgZxd"
+				"bzz-raw://752b937162dd210921b0506b28b03aff0205154915a7a115f442d6e7af66e87a",
+				"dweb:/ipfs/QmbL22RLJ4ivvYsWQUqNVf1T7CjD3hARLfQUgj87RxVGk1"
 			]
 		},
 		"FundTokenERC20.sol": {
-			"keccak256": "0x519345de28d08d4cca4d87f448ee53dce8998af39968e97a90e1d175d8207788",
+			"keccak256": "0xc5d0d22134bb9be22ed290856bcd8242b2bd31ebb595cc190157294d012a4a27",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f870fd8d14e1b5a72c528beff8d38c74c8afe42adf904ff9b6b0ffbc5dcc8ad1",
-				"dweb:/ipfs/QmNyGXy83NgtwTbHVsJdLJW2UbTn8iDkqm6DtHaokYEh8r"
+				"bzz-raw://ee4df9a07859a37846dc85089898727c69c70c07251dfb11ab8d3fdab8653b6a",
+				"dweb:/ipfs/QmQWVmJmcQuCYTpk51Qbwd4maLAmobVvk86tt9xbfuo8gk"
 			]
 		}
 	},

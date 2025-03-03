@@ -23,6 +23,8 @@ contract FundMe {
 
     address erc20Addr;
 
+    bool public getFundSuccess = false; 
+
     constructor(uint256 _lockTime) {
         // sepolia test
         dataFeed = AggregatorV3Interface(
@@ -91,6 +93,7 @@ contract FundMe {
             value: address(this).balance
         }("");
         require(success, "send tx failed");
+        getFundSuccess = true; // falg
     }
 
     /**

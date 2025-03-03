@@ -21,12 +21,17 @@ contract FundTokenERC20 is ERC20{
 
     function mint(uint256 amountToMint) public {
         require(fundMe.funderToAmount(msg.sender) >= amountToMint,"You cannot mint this many tokens");
+        require(fundMe.getFundSuccess(),"The fundme is not completed yet");
         _mint(msg.sender,amountToMint);
         fundMe.setFunderToAmount(msg.sender, fundMe.funderToAmount(msg.sender) - amountToMint);
     }
 
     function claim(uint256 amountToClaim) public {
-        
+        // complete cliam
+        require(balanceOf(msg.sender)>=amountToClaim,"you dont have enough ERC20 tokens");
+        require(fundMe.getFundSuccess(),"The fundme is not completed yet");
+        // burn amountToClaim Tokens
+        _burn(msg.sender,amountToClaim);
     }
 
 }
